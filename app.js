@@ -7,8 +7,8 @@ import "./assets/img/4geeks.ico";
 
 window.onload = function() {
   //write your code here
-  let textoConcatenado = "";
-  let excusa = document.getElementById("excuse");
+  let concatenatedText = "";
+  let excuse = document.getElementById("excuse");
 
   let who = ["The dog ", "My grandma ", "The mailman ", "My bird "];
   let action = ["ate ", "peed ", "crushed ", "broke "];
@@ -21,10 +21,10 @@ window.onload = function() {
     "while I was praying."
   ];
 
-  textoConcatenado += who[Math.floor(Math.random() * who.length)];
-  textoConcatenado += action[Math.floor(Math.random() * action.length)];
-  textoConcatenado += what[Math.floor(Math.random() * what.length)];
-  textoConcatenado += when[Math.floor(Math.random() * when.length)];
+  concatenatedText += who[Math.floor(Math.random() * who.length)];
+  concatenatedText += action[Math.floor(Math.random() * action.length)];
+  concatenatedText += what[Math.floor(Math.random() * what.length)];
+  concatenatedText += when[Math.floor(Math.random() * when.length)];
 
-  excusa.textContent = textoConcatenado;
+  excuse.textContent = concatenatedText;
 };
